@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Paradise - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-white border-b border-gray-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-extrabold bg-gradient-to-r from-amber-800 via-yellow-700 to-amber-500 bg-clip-text text-transparent">Coffee Paradise</a>
+      <ul class="flex space-x-8 font-medium">
+        <li><a href="index.html" class="text-black border-b-2 border-amber-800">Home</a></li>
+        <li><a href="products.html" class="text-black hover:text-amber-800 hover:border-b-2 hover:border-amber-800">Products</a></li>
+        <li><a href="customer.html" class="text-black hover:text-amber-800 hover:border-b-2 hover:border-amber-800">Customer</a></li>
+        <li><a href="about.html" class="text-black hover:text-amber-800 hover:border-b-2 hover:border-amber-800">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative h-[70vh] flex items-center justify-center text-center">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative text-white z-10">
+      <h1 class="text-5xl font-extrabold mb-4">Welcome to Coffee Paradise</h1>
+      <p class="text-lg mb-6">Brewing happiness, one cup at a time.</p>
+      <a href="products.html" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-yellow-500 transition">Explore Our Coffee</a>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="max-w-3xl mx-auto my-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">Our Coffee FAQs</h2>
+    <div id="faq" class="space-y-4">
+      <div class="border rounded-lg">
+        <button class="w-full text-left px-4 py-3 font-semibold flex justify-between items-center" onclick="toggleFAQ(1)">
+          What types of coffee do you sell? <span id="icon1">+</span>
+        </button>
+        <div id="ans1" class="hidden px-4 pb-4 text-gray-700">We sell espresso, cappuccino, latte, mocha, and specialty blends.</div>
+      </div>
+      <div class="border rounded-lg">
+        <button class="w-full text-left px-4 py-3 font-semibold flex justify-between items-center" onclick="toggleFAQ(2)">
+          Are your beans organic? <span id="icon2">+</span>
+        </button>
+        <div id="ans2" class="hidden px-4 pb-4 text-gray-700">Yes! Our beans are sourced from organic farms worldwide.</div>
+      </div>
+      <div class="border rounded-lg">
+        <button class="w-full text-left px-4 py-3 font-semibold flex justify-between items-center" onclick="toggleFAQ(3)">
+          Do you offer home delivery? <span id="icon3">+</span>
+        </button>
+        <div id="ans3" class="hidden px-4 pb-4 text-gray-700">Yes, we deliver fresh coffee beans and brewed coffee to your doorstep.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer class="bg-amber-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+      <div>
+        <h3 class="font-bold text-lg">Contact Us</h3>
+        <p>Email: @coffeeparadise.com</p>
+        <p>Phone: +91 12345 67890</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg">Visit Us</h3>
+        <p>123 Coffee Gali</p>
+        <p>Brewzila, India</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg">Follow Us</h3>
+        <p>Instagram | Facebook | Twitter</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
